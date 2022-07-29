@@ -57,7 +57,7 @@
 
     <div class="container">
 
-<h3>Information Extraction in Social Media</h3>
+<h3>Shakuntala2 (6 GTX 1080, 64 cores)</h3>
 <div class="well">
 <p>
 Status Messages written by users of Social Media websites (e.g. Facebook and Twitter)
@@ -82,7 +82,7 @@ A recent talk on this work can be viewed <a href="http://research.microsoft.com/
 </p>
 </div>
 
-<h3>Conversational Modeling in Social Media</h3>
+<h3>Shakuntala1 (3 GTX1080, 40 cores)</h3>
 <div class="well">
 <p>
 In addition to discussing upcoming events, users of social networking sites are having public conversations at an unprecedented scale.  This presents a unique opportunity
@@ -105,7 +105,7 @@ A recent talk on this work can be viewed <a href="http://research.microsoft.com/
 </p>
 </div>
 
-<h3>Better Models of Weakly Supervised Knowledge Extraction</h3>
+<h3>Ramanuja1 (V100, 40 cores)</h3>
 <div class="well">
 <p>
 Modeling large datasets has revolutionized a number of fields including machine translation and speech recognition.  This data is produced as a natural byproduct
@@ -134,46 +134,7 @@ outperforming Co-Training <a href="http://aclweb.org/anthology-new/D/D11/D11-114
 </p>
 
 </div>
-
-
-<h3>Latent Variable Models of Lexical Semantics</h3>
-<div class="well">
-<p>
-I have applied a variant of <b>Latent Dirichlet Allocation</b> to automatically infer the argument types or <b>Selectional Preferences</b> of
-textual relations <a href="http://www.aclweb.org/anthology-new/P/P10/P10-1044.pdf">[ACL 2010]</a>.  Generative models have the advantage that they provide a principled way to perform many different kinds of probabilistic queries about the data.  For example, our model of selectional preferences is useful in filtering improper applications of inference rules in context, showing a substantial improvement over a state-of-the-art rule-filtering system which makes use of a predefined set of classes.
-The topics discovered by our model can be browsed <a href="http://rv-n12.cs.washington.edu:1234/lda_sp_demo_v3/lda_sp/topics/">here</a>.  Inference and evaluation code is available for download <a href="https://github.com/aritter/LDA-SP">here</a>.
-</p>
-<p>
-In addition, I have applied latent variable models to automatically induce an appropriate set of categories for events extracted from Twitter <a href='rt080-ritter.pdf'>[KDD 2012]</a>.  
-By leveraging large quantities of unlabeled data we are able to outperform a supervised baseline at the task of categorizing extracted events using the types automatically inferred by our model.
-</p>
-</div>
-
-<h3>Utilizing Implicit Feedback in Interactive File Selection</h3>
-<div class="well">
-Selection tasks are common in modern computer interfaces; we are often required to
-select multiple files, emails, and other data entries for copying, modification, deletion etc...
-Complex selection tasks can require many clicks and mouse movements on behalf of the user;
-to aid users with these complex selections we propose an interactive machine learning solution <a href="http://www.cs.washington.edu/homes/aritter/p167-ritter.pdf">[IUI 2009]</a>.
-In addition to making use of explicit selections and deselections, we utilize implicit 
-features of the user's behavior such as passing over files, or proximity in the interface.
-Since the behavior features are task-independent, we use historical interaction traces as training
-data.  A video demonstration of our file-selection prototype can be viewed <a href="http://www.youtube.com/watch?v=4V-ukMndnFo">here</a>.
-</div>
-
-<h3>Finding Contradictions in Web Text</h3>
-<div class="well">
-Many textual relations map one argument to a unique value.  For example the verb <i>assassinated</i> should map each direct object to a unique subject.  We investigate automatically
-classifying relation functionality using an unsupervised EM-style algorithm, and evaluate performance at discovering naturally occurring contradictions within a large web corpus <a href="http://www.cs.washington.edu/homes/aritter/Ritter_emnlp08.pdf">[EMNLP 2008]</a>.  We show
-that contradiction detection on the web is a difficult task for a variety of reasons including name ambiguity (e.g. John Smith was born in many different locations), synonyms and meronyms
-(Mozart was born in both Salzburg and Austria).
-</div>
-
-<h3>Interactive Information Integration with HTML Tables & Freebase</h3>
-<div class="well">
-As part of the grad databases class, I investigated applying data-integration techniques to augment HTML tables with additional data from Freebase, in addition to enabling users to quickly verify and contribute data contained in the table. Users can choose to display columns which are not present in the original table, but for which data exists in Freebase, providing direct benefit.  They can also easily verify our algorithmically generated mapping from table columns to Freebase attributes, allowing data contained in the table (but missing in Freebase) to be imported.  Details on this project including a prototype Firefox browser plugin can be found <a href="freebase_html.html">here</a>.
-</div>
-
+	    
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
 <script type="text/javascript">
