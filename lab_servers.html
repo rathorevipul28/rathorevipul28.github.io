@@ -57,9 +57,16 @@
 
     <div class="container">
 
-<h3>Shakuntala2 (6 GTX 1080, 64 cores)</h3>
+<h3>Compute servers</h3>
 <div class="well">
 <p>
+<li>
+There are 3 GPU compute nodes in our lab - 
+1. Shakuntala1 (3 GTX1080, 40 cores) (Note:- ssh to shakuntala1 should be done using the IP Address 10.237.23.117 (ssh <username>@10.237.23.117))
+2. Shakuntala2 (6 GTX 1080, 64 cores) (ssh <username>shakuntala2.cse.iitd.in)
+3. Ramanuja1 (V100, 40 cores) (ssh <username>ramanuja1.cse.iitd.in)
+</li> 
+
 Status Messages written by users of Social Media websites (e.g. Facebook and Twitter)
 contain a great deal of timely and important information, however there are also many irrelevant and redundant messages 
 which can easily lead to <b>information overload</b>.  No person can read each of 
@@ -82,7 +89,7 @@ A recent talk on this work can be viewed <a href="http://research.microsoft.com/
 </p>
 </div>
 
-<h3>Shakuntala1 (3 GTX1080, 40 cores)</h3>
+<h3>Storage servers</h3>
 <div class="well">
 <p>
 In addition to discussing upcoming events, users of social networking sites are having public conversations at an unprecedented scale.  This presents a unique opportunity
@@ -103,36 +110,6 @@ This work has several possible applications, including <a href="http://aclweb.or
 <p>
 A recent talk on this work can be viewed <a href="http://research.microsoft.com/apps/video/default.aspx?id=154473">here</a>.
 </p>
-</div>
-
-<h3>Ramanuja1 (V100, 40 cores)</h3>
-<div class="well">
-<p>
-Modeling large datasets has revolutionized a number of fields including machine translation and speech recognition.  This data is produced as a natural byproduct
-of people's activities (for example transcribing speech to text and professional translation services).  
-Computational semantics has suffered in this respect because people don't naturally translate text into 
-machine-processable meaning representations.  In order to apply large scale data-driven approaches to semantic processing, we need to leverage readily available
-knowledge sources such as Wikipedia and <a href="http://www.freebase.com/">Freebase</a> as indirect supervision.  These supervision sources have weaker correspondence with text thus
-requiring specialized learning methods involving latent variables.
-</p>
-
-<p>
-I have explored the issue of <b>Missing Data in Distant Supervision</b> <a href="http://www.transacl.org/wp-content/uploads/2013/10/paperno30.pdf">[TACL 2013]</a>.  
-Even large structured data sources such as Freebase lack complete coverage in many areas of interest.
-Most previous distantly supervised learning algorithms have relied on the <b>closed world assumption</b>: that all propositions missing from the KB are false.
-In the situation where information is missing from either the text or the database this leads to errors in the training data.
-These assumptions were relaxed in a novel latent variable model, which jointly models the process of information extraction in addition to missing information
-in both the text and the KB, and provides a natural way to incorporate side-information in the form of a missing data model.  
-I designed an efficient and accurate inference method for this new model and presented results demonstrating large performance improvements by explicitly modeling missing data.
-</p>
-
-<p>
-I have investigated <b>Distant Supervision with Topic Models</b>, which is appropriate for weakly supervised learning problems involving highly ambiguous training data.
-To demonstrate the feasibility of this approach we make use of entity categories from Freebase as a distant source of supervision
-in a weakly supervised named entity categorization task.  This approach leverages the ambiguous supervision provided by Freebase in a principled way, significantly 
-outperforming Co-Training <a href="http://aclweb.org/anthology-new/D/D11/D11-1141.pdf">[EMNLP 2011a]</a>.
-</p>
-
 </div>
 	    
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
