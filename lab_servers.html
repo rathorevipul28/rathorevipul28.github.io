@@ -61,11 +61,23 @@
 <div class="well">
 <p>
 <li>
-There are 3 GPU compute nodes in our lab - 
-1. Shakuntala1 (3 GTX1080, 40 cores) (Note:- ssh to shakuntala1 should be done using the IP Address 10.237.23.117 (ssh <username>@10.237.23.117))
-2. Shakuntala2 (6 GTX 1080, 64 cores) (ssh <username>shakuntala2.cse.iitd.in)
-3. Ramanuja1 (V100, 40 cores) (ssh <username>ramanuja1.cse.iitd.in)
+There are 3 GPU compute nodes - <br>
+1. Shakuntala1 (3 GTX1080, 40 cores) (Note:- ssh to shakuntala1 should be done using the IP Address 10.237.23.117 (ssh user@10.237.23.117)) <br>
+2. Shakuntala2 (6 GTX 1080, 64 cores) (ssh user@shakuntala2.cse.iitd.in)  <br>
+3. Ramanuja1 (1 V100, 40 cores) (ssh user@ramanuja1.cse.iitd.in)  <br>
 </li> 
+
+<li>
+We recommend users Anaconda for installing packages. Use the required cudatoolkit (if needed) in your conda environments. You can create multiple environments. WE RECOMMEND NOT TO update the existing CUDA drivers on these systems. It may cause problems for other users using the same system. 
+</li> 
+
+<li>
+If you are using the multi-GPU servers, then please use the server GPUs responsibly. Don’t hog all the GPUs unnecessarily. We recommend maximum 2 nodes on shakuntala2 per user at any time. If you need more, you should coordinate amongst yourselves on the WhatsApp group.
+</li>
+
+<li>
+To connect to the internet from your terminal use the proxy scripts. More details can be found <a href="https://poorvi.cse.iitd.ac.in/~anupam/internet_on_vm/">here</a> (Courtesy: Anupam Sobti). This is an internal link. Using screen sessions is a good idea for working remotely.
+</li>
 
 Status Messages written by users of Social Media websites (e.g. Facebook and Twitter)
 contain a great deal of timely and important information, however there are also many irrelevant and redundant messages 
