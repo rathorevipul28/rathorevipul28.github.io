@@ -45,7 +45,7 @@
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
               <!-- <li><a href="projects.html">Research</a></li> -->
-              <li class="active"><a href="publications.html">Publications</a></li>
+              <li><a href="publications.html">Publications</a></li>
 	      <li><a href="application_materials/vipul_rathore_cv.pdf">C.V.</a></li>
 	      <li class="active"><a href="lab_servers.html">Servers</a></li>
             </ul>
@@ -63,26 +63,26 @@
 <p>
 <li>
 There are 3 GPU compute nodes - <br>
-1. Shakuntala1 (3 GTX1080, 40 cores) (Note:- ssh to shakuntala1 should be done using the IP Address 10.237.23.117 (ssh user@10.237.23.117)) <br>
+1. Shakuntala1 (3 GTX1080, 40 cores) (<b>Note:- ssh to shakuntala1 should be done using the IP Address 10.237.23.117</b> (ssh user@10.237.23.117)) <br>
 2. Shakuntala2 (6 GTX 1080, 64 cores) (ssh user@shakuntala2.cse.iitd.in)  <br>
 3. Ramanuja1 (1 V100, 40 cores) (ssh user@ramanuja1.cse.iitd.in)  <br>
 </li> 
 
 <li>
 We recommend users to use Anaconda for installing packages. Use the required cudatoolkit (if needed) in your conda environments. You can create multiple environments. <br>
-Note:- WE PREFER NOT TO update the existing CUDA drivers on these systems. It may cause problems for other users using the same system. 
+<b>Note:- WE PREFER NOT TO update the existing CUDA drivers on these systems</b>. It may cause problems for other users using the same system. 
 </li> 
 
 <li>
-If you are using the multi-GPU servers (shakuntalaX), then please use the server GPUs responsibly. Don’t hog all the GPUs unnecessarily. We recommend maximum 2 nodes on shakuntala2 per user at any time. If you need more, you should coordinate amongst yourselves on the WhatsApp group.
+If you are using the multi-GPU servers (shakuntalaX), then please use them responsibly. Don’t hog all the GPUs unnecessarily. We recommend maximum 2 nodes on shakuntala2 per user at any time. If you need more, you should coordinate amongst yourselves on the WhatsApp group.
 </li>
 
 <li>
-To connect to the internet from your terminal use the proxy scripts. More details can be found <a href="https://poorvi.cse.iitd.ac.in/~anupam/internet_on_vm/">here</a> (Courtesy: Anupam Sobti). This is an internal link. Using screen sessions is a good idea for working remotely.
+To connect to the internet from your terminal, use the proxy scripts. More details can be found <a href="https://poorvi.cse.iitd.ac.in/~anupam/internet_on_vm/">here</a> (Courtesy: Anupam Sobti). This is an internal link. Using screen sessions is a good idea for working remotely.
 </li>
 
 <li>
-Since the disk space is limited, you will get 35 GB of home space by default. However, you may use the scratch folder designated for you for keeping the larger datasets/ files/ folders. A link to your designated scratch folder should be present in your home folder.
+Since the disk space is limited, you will get 200 GB space in /home by default. To make best use of it, delete the old files regularly and take backup to hpc /scratch .
 </li>
 
 <li>
