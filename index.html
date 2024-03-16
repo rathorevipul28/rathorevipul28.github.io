@@ -94,6 +94,28 @@ Before joining IIT Delhi, I received my Masters from IISc Bangalore, where I sta
 </td><td height=40></td></tr>
 </table>
 
+<script>
+    $(document).ready(function(){
+        var x = document.querySelectorAll(".github-button");
+        for (var i = 0; i < x.length; i++) {
+            var action = $(x[i]).attr('data-action');
+            var name = $(x[i]).attr('data-text');
+            $.ajax({
+                url : "https://api.github.com/repos/" + $(x[i]).attr('href'),
+                async: false,
+                success : function (resp) {
+                    var template = "<span id='github-name'><img id='github-icon' src='./img/github-icon.png'>" + name + "</span>";
+                    template += "<span id='github-action'>"+ resp["stargazers_count"] +"<img id='github-star' src='./img/star.png'></span>";
+                    template = "<a id='github-repo' href = 'https://github.com/"+$(x[i]).attr('href')+"' target='_blank'>"+template+"</a>";
+                    $(x[i]).html(template);
+                },
+                error: function () {}
+            });
+        }
+    }
+    );
+</script>
+
 <div class='well'>
 <b>Recent News:</b>
 <ul>
