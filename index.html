@@ -104,8 +104,8 @@ Before joining IIT Delhi, I received my Masters from IISc Bangalore, where I sta
                 url : "https://api.github.com/repos/" + $(x[i]).attr('href'),
                 async: false,
                 success : function (resp) {
-                    var template = "<span id='github-name'><img id='github-icon' src='./img/github-icon.png'>" + name + "</span>";
-                    template += "<span id='github-action'>"+ resp["stargazers_count"] +"<img id='github-star' src='./img/star.png'></span>";
+                    var template = "<span id='github-name'><img id='github-icon' src='./github-icon.png'>" + name + "</span>";
+                    template += "<span id='github-action'>"+ resp["stargazers_count"] +"<img id='github-star' src='./star.png'></span>";
                     template = "<a id='github-repo' href = 'https://github.com/"+$(x[i]).attr('href')+"' target='_blank'>"+template+"</a>";
                     $(x[i]).html(template);
                 },
