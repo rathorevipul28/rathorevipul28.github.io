@@ -14,6 +14,17 @@
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
+    .sticky-news {
+      position: sticky;
+      top: 70px; /* leave space for the fixed navbar */
+      z-index: 1020; /* higher than normal content */
+      background: white; /* avoid transparency issues */
+    }
+  
+    .scroll-content {
+      max-height: 500px; /* optional: control height */
+      overflow-y: auto;
+    }
     </style>
     <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -116,6 +127,7 @@ Before joining IIT Delhi, I received my Masters from IISc Bangalore, where I sta
     );
 </script>
 
+<div class="sticky-news">
 <div class='well'>
 <b>Recent News:</b>
 <ul>
@@ -127,7 +139,8 @@ Before joining IIT Delhi, I received my Masters from IISc Bangalore, where I sta
   <li>5/2021 Awarded the prestigious <a href='https://www.pmrf.in/'>PMRF Fellowship</a></li>
 </ul>
 </div>
-
+</div>
+  
 <div class='well'>
 <b>Recent Service:</b>
 <ul>
